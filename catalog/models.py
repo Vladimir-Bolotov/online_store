@@ -11,8 +11,8 @@ class Category(models.Model):
         return self.name
 
     class Meta:
-        verbose_name = 'категория'
-        verbose_name_plural = 'категории'
+        verbose_name = 'Категория'
+        verbose_name_plural = 'Категории'
 
 
 class Product(models.Model):
@@ -23,11 +23,23 @@ class Product(models.Model):
     price = models.IntegerField(verbose_name="Цена")
     created_at = models.DateField(verbose_name="Дата создания")
     updated_at = models.DateField(verbose_name="Дата последнего изменения")
-    manufactured_at = models.DateField(**NULLABLE, verbose_name="Дата производства продукта")
 
     def __str__(self):
         return f"{self.name, self.price}"
 
     class Meta:
-        verbose_name = 'товар'
-        verbose_name_plural = 'товары'
+        verbose_name = 'Товар'
+        verbose_name_plural = 'Товары'
+
+
+class Contact(models.Model):
+    country = models.CharField(max_length=100, verbose_name="Страна")
+    inn = models.CharField(max_length=15, verbose_name="ИНН")
+    address = models.CharField(max_length=250, verbose_name="Адрес")
+
+    def __str__(self):
+        return f'{self.country, self.inn, self.address}'
+
+    class Meta:
+        verbose_name = 'Контакт'
+        verbose_name_plural = 'Контакты'

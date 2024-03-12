@@ -1,0 +1,93 @@
+[
+  {
+    "model": "catalog.product",
+    "pk": 1,
+    "fields": {
+      "name": "Смартфон HUAWEI nova 11i 8/128GB Mint Green (MAO-LX9N)",
+      "description": "Смартфон Huawei nova 11i Mint Green (MAO-LX9N) представлен в пластиковом корпусе зеленого цвета. В модель установлена операционная система Android. Предусмотрены два слота под nano-SIM. Телефон функционирует на базе восьмиядерного процессора Qualcomm Snapdragon 680 2,4 ГГц. Оперативная память обладает емкостью 8 Гб, встроенная — объемом 128 Гб.\r\nСенсорный дисплей смартфона диагональю 6,8 дюйма произведен на основе технологии IPS. Изображение передается в разрешении 2388x1080 пикселей. Частота обновления 90 гц обеспечивает плавную смену кадров без разрывов.",
+      "image": "",
+      "category": 1,
+      "price": 16999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 2,
+    "fields": {
+      "name": "Смартфон Samsung Galaxy S24 Ultra 12/256GB Cobalt Violet",
+      "description": "Смартфон Samsung Galaxy S24 Ultra 12/256GB Cobalt Violet дополнен искусственным интеллектом Galaxy AI, который позволяет быстро находить любые предметы с картинок в поиске Google, легко перемещать объекты на фотографиях и переводить речь на нужный язык во время разговора по телефону.",
+      "image": "",
+      "category": 1,
+      "price": 146999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 3,
+    "fields": {
+      "name": "Смартфон Apple iPhone 14 128GB nanoSim/eSim Midnight",
+      "description": "Данная модель могла быть предварительно активирована. Является абсолютно новой, не проходила процедуру привязки аккаунта Apple ID.",
+      "image": "iphonex-b.jpg",
+      "category": 1,
+      "price": 75999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 4,
+    "fields": {
+      "name": "Смартфон Xiaomi Redmi A3 3/64Gb Black",
+      "description": "Страна Китай\r\nГод выпуска 2024",
+      "image": "",
+      "category": 1,
+      "price": 6999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 5,
+    "fields": {
+      "name": "Ноутбук ASUS M1502IA-BQ093",
+      "description": "Ноутбук Asus M1502IA-BQ093 — модель в пластиковом корпусе серого цвета. Лэптоп оснащен оперативной памятью на 16 Гб и восьмиядерным процессором AMD Ryzen 7 4800H с тактовой частотой 2,9 ГГц,",
+      "image": "",
+      "category": 2,
+      "price": 55999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 6,
+    "fields": {
+      "name": "Монитор HUAWEI MateView SE 23.8\" IPS черный SSN-24",
+      "description": "Экран монитора Huawei MateView SE SSN-24 создан по технологии IPS. Его диагональ — 23,8 дюйма, разрешение — 1920 х 1080 пикселей, частота обновления — 75 Гц. Максимальные углы обзора по вертикали и горизонтали — 178°.",
+      "image": "",
+      "category": 2,
+      "price": 10999,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  },
+  {
+    "model": "catalog.product",
+    "pk": 7,
+    "fields": {
+      "name": "Планшет HUAWEI MatePad SE (AGS5-L09) 3/32Gb LTE Black",
+      "description": "Планшет Huawei MatePad SE в металлическом корпусе черного цвета оснащен оперативной памятью объемом 3 Гб и встроенным хранилищем емкостью 32 Гб. Он поддерживает подключение к интернету через SIM-карту вплоть до стандарта 4G LTE",
+      "image": "",
+      "category": 2,
+      "price": 14199,
+      "created_at": "2024-03-12",
+      "updated_at": "2024-03-12"
+    }
+  }
+]
