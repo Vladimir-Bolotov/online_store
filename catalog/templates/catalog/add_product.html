@@ -1,0 +1,42 @@
+{%extends 'catalog/base.html'%}
+
+{%block content%}
+<form class="row g-3 needs-validation" novalidate method="post" >
+    {% csrf_token %}
+    <div class="col-md-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Название товара</label>
+        <input class="form-control" name="name" type="text">
+    </div>
+
+    <div class="col-md-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Цена</label>
+        <input class="form-control" name="price" type="text">
+    </div>
+
+    <div class="col-md-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Описание товара</label>
+        <textarea class="form-control" name="description" id="exampleFormControlTextarea1" rows="3"></textarea>
+    </div>
+
+    <div class="col-md-5">
+        <label for="exampleFormControlTextarea1" class="form-label">Загрузить картинку</label>
+        <div class="input-group mb-3">
+            <input type="file" name="image" class="form-control" id="inputGroupFile02">
+            <label class="input-group-text" for="inputGroupFile02">Загрузка</label>
+        </div>
+    </div>
+    <div class="input-group col-md-4">
+        <label class="input-group-text" for="inputGroupSelect01">Выбрать категорию</label>
+        <select class="form-select" id="inputGroupSelect01" name="category">
+            {%for category in categories%}
+            <option selected>{{category.name}}</option>
+            {%endfor%}
+        </select>
+    </div>
+
+
+    <button type="submit" class="btn btn-lg btn-block btn-outline-primary col-md-4">Отправить</button>
+</form>
+
+
+{% endblock %}
