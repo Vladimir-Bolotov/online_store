@@ -5,6 +5,4 @@ register = template.Library()
 
 @register.simple_tag
 def my_media(data):
-    if data:
-        return f'/media/{data}'
-    return '#'
+    return data.url if data else '#'

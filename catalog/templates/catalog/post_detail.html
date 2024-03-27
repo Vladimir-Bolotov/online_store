@@ -1,0 +1,29 @@
+{%extends 'catalog/base.html'%}
+{%load static%}
+{%load my_media%}
+
+{%block content%}
+<div class="card">
+    <div class="card-body">
+        <h1>{{object.title}}</h1>
+    </div>
+</div>
+
+<div class="row">
+    <div class="col-sm-12 mb-3 mb-sm-0">
+        <div class="card">
+            <div class="card-body">
+
+                <img src="{%my_media object.image%}" class="img-thumbnail" >
+
+                {{object.content}}
+            </div>
+
+            <a href="{%url 'catalog:edit_post' post.pk%}" class="btn btn-primary">Редактировать</a>
+            <a href="{%url 'catalog:delete_post' post.pk%}" class="btn btn-primary">Удалить</a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
